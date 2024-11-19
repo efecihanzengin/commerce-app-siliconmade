@@ -1,0 +1,66 @@
+import '../styles/globals.css'
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+:root {
+    /* Ana renkler */
+    --background-primary: #121212;
+    --background-secondary: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --accent-color: #bb86fc;
+    --error-color: #cf6679;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  /* Genel buton stilleri */
+  button {
+    background-color: var(--accent-color);
+    color: var(--background-primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  /* Input stilleri */
+  input, textarea {
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--text-secondary);
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+  
+  /* Card/container stilleri */
+  .container {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  /* Link stilleri */
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+export default MyApp 
